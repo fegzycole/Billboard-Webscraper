@@ -40,7 +40,7 @@ In this project, I built a webscraper application which searches billboard.com f
 
 ### Objective
 
- -Getting more hands-on experience building complex ruby programs
+ - Getting more hands-on experience building complex ruby programs
  
 
 ### Built With
