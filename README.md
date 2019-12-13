@@ -1,14 +1,11 @@
-# Billboard-Webscraper
-A webscraper that displays the top 100 songs on the billboard countdown
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 <br />
 <p align="center">
  
-  <h3 align="center">Ruby Capstone Project</h3>
+  <h3 align="center">Billboard-Webscraper</h3>
   <p align="center">
-    A Solo project by Iyara Ferguson
+    Microverse Ruby Capstone Project by Iyara Ferguson
     <br />
     <a href="https://github.com/fegzycole/Billboard-Webscraper/tree/feature-developer"><strong>Explore the docs »</strong></a>
     <br />
