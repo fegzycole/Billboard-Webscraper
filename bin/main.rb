@@ -9,6 +9,6 @@ billboard_scrapper = Scraper.new
 
 array_of_songs = billboard_scrapper.top_songs
 
-json_parser = JsonParser.new(array_of_songs)
+json_parser = JsonParser.new
 
-puts json_parser.convert_to_json
+puts json_parser.convert_to_json(array_of_songs)
