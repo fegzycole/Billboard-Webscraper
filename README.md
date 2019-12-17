@@ -1,7 +1,7 @@
 <br />
 <p align="center">
  
-  <h3 align="center">Billboard-Webscraper</h3>
+  <h2 align="center">Billboard-Webscraper</h2>
   <p align="center">
     Microverse Ruby Capstone Project by Iyara Ferguson
     <br />
