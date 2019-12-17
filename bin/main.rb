@@ -14,9 +14,12 @@ def scrape_songs
 
   json_array = json_parser.convert_to_json(array_of_songs)
 
-  File.open('songs.txt', 'w+') do |f|
-    json_array.each { |song| f.puts(song) }
+  if json_array
+    File.open('songs.txt', 'w+') do |f|
+      json_array.each { |song| f.puts(song) }
+    end
   end
+
 end
 
 scrape_songs

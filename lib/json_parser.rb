@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# ! /usr/bin/env ruby
-
 require 'json'
 
 class JsonParser # :nodoc:
@@ -10,7 +8,9 @@ class JsonParser # :nodoc:
   end
 
   def convert_to_json(hash_array)
-    hash_array.each { |hash| @json_array << hash.to_json }
-    @json_array
+    if hash_array
+      hash_array.each { |hash| @json_array << hash.to_json }
+      @json_array
+    end
   end
 end

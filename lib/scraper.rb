@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# ! /usr/bin/env ruby
-
 require 'nokogiri'
 require 'open-uri'
 
@@ -13,7 +11,7 @@ class Scraper # :nodoc:
   end
 
   def get_top_songs
-    begin
+    if generate_html
       songs = generate_html.css('button.chart-element__wrapper')
       songs.each do |song|
         song_hash = {
@@ -25,15 +23,17 @@ class Scraper # :nodoc:
         @list_of_songs << song_hash
       end
       @list_of_songs
-    rescue Exception => error_message
-      error_message
     end
   end
 
   private
 
   def generate_html
-    doc = Nokogiri::HTML(URI.parse(URL).open)
-    doc
+    begin
+      doc = Nokogiri::HTML(URI.parse(URL).open)
+      doc
+    rescue => error
+      puts "#{error.class} #{error.message}, check you internet connection and try again"
+    end
   end
 end
