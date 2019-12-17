@@ -6,8 +6,8 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper # :nodoc:
+  URL = 'https://www.billboard.com/charts/hot-100'
   def initialize
-    @url = 'https://www.billboard.com/charts/hot-100'
     @list_of_songs = []
   end
 
@@ -30,7 +30,7 @@ class Scraper # :nodoc:
   attr_reader :url
 
   def generate_html
-    doc = Nokogiri::HTML(URI.parse(url).open)
+    doc = Nokogiri::HTML(URI.parse(URL).open)
     doc
   end
 end
