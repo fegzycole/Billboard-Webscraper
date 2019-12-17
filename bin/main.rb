@@ -2,8 +2,8 @@
 
 # frozen_string_literal: true
 
-require './lib/scraper'
-require './lib/json_parser'
+require_relative '../lib/scraper'
+require_relative '../lib/json_parser'
 
 def scrape_songs
   billboard_scrapper = Scraper.new
