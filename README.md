@@ -58,7 +58,7 @@ This project was built using Ruby.
 
 - Type **bin/main.rb** in your terminal and hit enter to run the executable
 
-- A **song.txt** file consisting of the top 100 songs in json format is created in the root directory
+- Follow the instructions on the terminal to get a custom file in your root directory
 
 
 <!-- ROADMAP -->
