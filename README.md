@@ -1,5 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
 <br />
 <p align="center">
  
@@ -22,7 +20,6 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Prerequisites](#prerequisites)
 * [Objective](#objective)
 * [Getting Started](#getting-started)
