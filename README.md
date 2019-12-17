@@ -23,7 +23,9 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Use](#use)
+* [Prerequisites](#prerequisites)
+* [Objective](#objective)
+* [Getting Started](#getting-started)
 * [Roadmap](#roadmap)
 * [License](#license)
 * [Contact](#contact)
@@ -53,9 +55,9 @@ This project was built using Ruby.
 
 - git clone https://github.com/fegzycole/Billboard-Webscraper.git
 
-- cd Billboard-Webscraper
+- cd Billboard-Webscraper/bin
 
-- Type **bin/main.rb** in your terminal to run the executable
+- Type **ruby main.rb** in your terminal and press the enter button
 
 - A **song.txt** file consisting of the top 100 songs in json format is created in the root directory
 
