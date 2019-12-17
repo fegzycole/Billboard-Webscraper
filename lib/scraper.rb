@@ -12,17 +12,17 @@ class Scraper # :nodoc:
     @list_of_songs = []
   end
 
-  def top_songs
+  def get_top_songs
     begin
       songs = generate_html.css('button.chart-element__wrapper')
-      songs.each do |link|
-        top_songs = {
-          rank: link.css('span.chart-element__rank__number').text,
-          title: link.css('span.chart-element__information__song').text,
-          artist: link.css('span.chart-element__information__artist').text,
-          weeks_on_count_down: link.css('span.chart-element__meta.text--week').text
+      songs.each do |song|
+        song_hash = {
+          rank: song.css('span.chart-element__rank__number').text,
+          title: song.css('span.chart-element__information__song').text,
+          artist: song.css('span.chart-element__information__artist').text,
+          weeks_on_count_down: song.css('span.chart-element__meta.text--week').text
         }
-        @list_of_songs << top_songs
+        @list_of_songs << song_hash
       end
       @list_of_songs
     rescue Exception => error_message
