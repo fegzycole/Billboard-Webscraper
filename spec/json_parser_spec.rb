@@ -12,11 +12,5 @@ describe JsonParser do
       hashed_songs = webscraper.top_songs
       expect(json_parser.convert_to_json(hashed_songs)).to be_an(Array)
     end
-
-    it 'should return a 100 songs' do
-      hashed_songs = webscraper.top_songs
-      json_songs = json_parser.convert_to_json(hashed_songs)
-      expect(json_songs.size).to eql(100)
-    end
   end
 end
