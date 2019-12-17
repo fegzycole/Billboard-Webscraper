@@ -18,6 +18,7 @@ def scrape_songs
     File.open('songs.txt', 'w+') do |f|
       json_array.each { |song| f.puts(song) }
     end
+    puts "File successfully generated!"
   end
 
 end
